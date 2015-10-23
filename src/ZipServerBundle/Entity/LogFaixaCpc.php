@@ -39,5 +39,76 @@ class LogFaixaCpc
     private $cpcNuSequencial;
 
 
-}
 
+    /**
+     * Set cpcNuInicial
+     *
+     * @param integer $cpcNuInicial
+     *
+     * @return LogFaixaCpc
+     */
+    public function setCpcNuInicial($cpcNuInicial)
+    {
+        $this->cpcNuInicial = $cpcNuInicial;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcNuInicial
+     *
+     * @return integer
+     */
+    public function getCpcNuInicial()
+    {
+        return $this->cpcNuInicial;
+    }
+
+    /**
+     * Set cpcNuFinal
+     *
+     * @param integer $cpcNuFinal
+     *
+     * @return LogFaixaCpc
+     */
+    public function setCpcNuFinal($cpcNuFinal)
+    {
+        $this->cpcNuFinal = $cpcNuFinal;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcNuFinal
+     *
+     * @return integer
+     */
+    public function getCpcNuFinal()
+    {
+        return $this->cpcNuFinal;
+    }
+
+    /**
+     * Set cpcNuSequencial
+     *
+     * @param \ZipServerBundle\Entity\LogCpc $cpcNuSequencial
+     *
+     * @return LogFaixaCpc
+     */
+    public function setCpcNuSequencial(\ZipServerBundle\Entity\LogCpc $cpcNuSequencial = null)
+    {
+        $this->cpcNuSequencial = $cpcNuSequencial;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcNuSequencial
+     *
+     * @return \ZipServerBundle\Entity\LogCpc
+     */
+    public function getCpcNuSequencial()
+    {
+        return $this->cpcNuSequencial;
+    }
+}

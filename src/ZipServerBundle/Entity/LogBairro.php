@@ -53,5 +53,110 @@ class LogBairro
     private $locNuSequencial;
 
 
-}
 
+    /**
+     * Get baiNuSequencial
+     *
+     * @return integer
+     */
+    public function getBaiNuSequencial()
+    {
+        return $this->baiNuSequencial;
+    }
+
+    /**
+     * Set ufeSg
+     *
+     * @param string $ufeSg
+     *
+     * @return LogBairro
+     */
+    public function setUfeSg($ufeSg)
+    {
+        $this->ufeSg = $ufeSg;
+
+        return $this;
+    }
+
+    /**
+     * Get ufeSg
+     *
+     * @return string
+     */
+    public function getUfeSg()
+    {
+        return $this->ufeSg;
+    }
+
+    /**
+     * Set baiNo
+     *
+     * @param string $baiNo
+     *
+     * @return LogBairro
+     */
+    public function setBaiNo($baiNo)
+    {
+        $this->baiNo = $baiNo;
+
+        return $this;
+    }
+
+    /**
+     * Get baiNo
+     *
+     * @return string
+     */
+    public function getBaiNo()
+    {
+        return $this->baiNo;
+    }
+
+    /**
+     * Set baiNoAbrev
+     *
+     * @param string $baiNoAbrev
+     *
+     * @return LogBairro
+     */
+    public function setBaiNoAbrev($baiNoAbrev)
+    {
+        $this->baiNoAbrev = $baiNoAbrev;
+
+        return $this;
+    }
+
+    /**
+     * Get baiNoAbrev
+     *
+     * @return string
+     */
+    public function getBaiNoAbrev()
+    {
+        return $this->baiNoAbrev;
+    }
+
+    /**
+     * Set locNuSequencial
+     *
+     * @param \ZipServerBundle\Entity\LogLocalidade $locNuSequencial
+     *
+     * @return LogBairro
+     */
+    public function setLocNuSequencial(\ZipServerBundle\Entity\LogLocalidade $locNuSequencial = null)
+    {
+        $this->locNuSequencial = $locNuSequencial;
+
+        return $this;
+    }
+
+    /**
+     * Get locNuSequencial
+     *
+     * @return \ZipServerBundle\Entity\LogLocalidade
+     */
+    public function getLocNuSequencial()
+    {
+        return $this->locNuSequencial;
+    }
+}

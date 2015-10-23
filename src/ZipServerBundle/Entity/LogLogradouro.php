@@ -126,5 +126,350 @@ class LogLogradouro
     private $locNuSequencial;
 
 
-}
 
+    /**
+     * Get logNuSequencial
+     *
+     * @return integer
+     */
+    public function getLogNuSequencial()
+    {
+        return $this->logNuSequencial;
+    }
+
+    /**
+     * Set ufeSg
+     *
+     * @param string $ufeSg
+     *
+     * @return LogLogradouro
+     */
+    public function setUfeSg($ufeSg)
+    {
+        $this->ufeSg = $ufeSg;
+
+        return $this;
+    }
+
+    /**
+     * Get ufeSg
+     *
+     * @return string
+     */
+    public function getUfeSg()
+    {
+        return $this->ufeSg;
+    }
+
+    /**
+     * Set logNo
+     *
+     * @param string $logNo
+     *
+     * @return LogLogradouro
+     */
+    public function setLogNo($logNo)
+    {
+        $this->logNo = $logNo;
+
+        return $this;
+    }
+
+    /**
+     * Get logNo
+     *
+     * @return string
+     */
+    public function getLogNo()
+    {
+        return $this->logNo;
+    }
+
+    /**
+     * Set logNome
+     *
+     * @param string $logNome
+     *
+     * @return LogLogradouro
+     */
+    public function setLogNome($logNome)
+    {
+        $this->logNome = $logNome;
+
+        return $this;
+    }
+
+    /**
+     * Get logNome
+     *
+     * @return string
+     */
+    public function getLogNome()
+    {
+        return $this->logNome;
+    }
+
+    /**
+     * Set baiNuSequencialFim
+     *
+     * @param integer $baiNuSequencialFim
+     *
+     * @return LogLogradouro
+     */
+    public function setBaiNuSequencialFim($baiNuSequencialFim)
+    {
+        $this->baiNuSequencialFim = $baiNuSequencialFim;
+
+        return $this;
+    }
+
+    /**
+     * Get baiNuSequencialFim
+     *
+     * @return integer
+     */
+    public function getBaiNuSequencialFim()
+    {
+        return $this->baiNuSequencialFim;
+    }
+
+    /**
+     * Set cep
+     *
+     * @param string $cep
+     *
+     * @return LogLogradouro
+     */
+    public function setCep($cep)
+    {
+        $this->cep = $cep;
+
+        return $this;
+    }
+
+    /**
+     * Get cep
+     *
+     * @return string
+     */
+    public function getCep()
+    {
+        return $this->cep;
+    }
+
+    /**
+     * Set logComplemento
+     *
+     * @param string $logComplemento
+     *
+     * @return LogLogradouro
+     */
+    public function setLogComplemento($logComplemento)
+    {
+        $this->logComplemento = $logComplemento;
+
+        return $this;
+    }
+
+    /**
+     * Get logComplemento
+     *
+     * @return string
+     */
+    public function getLogComplemento()
+    {
+        return $this->logComplemento;
+    }
+
+    /**
+     * Set logTipoLogradouro
+     *
+     * @param string $logTipoLogradouro
+     *
+     * @return LogLogradouro
+     */
+    public function setLogTipoLogradouro($logTipoLogradouro)
+    {
+        $this->logTipoLogradouro = $logTipoLogradouro;
+
+        return $this;
+    }
+
+    /**
+     * Get logTipoLogradouro
+     *
+     * @return string
+     */
+    public function getLogTipoLogradouro()
+    {
+        return $this->logTipoLogradouro;
+    }
+
+    /**
+     * Set logStatusTipoLog
+     *
+     * @param string $logStatusTipoLog
+     *
+     * @return LogLogradouro
+     */
+    public function setLogStatusTipoLog($logStatusTipoLog)
+    {
+        $this->logStatusTipoLog = $logStatusTipoLog;
+
+        return $this;
+    }
+
+    /**
+     * Get logStatusTipoLog
+     *
+     * @return string
+     */
+    public function getLogStatusTipoLog()
+    {
+        return $this->logStatusTipoLog;
+    }
+
+    /**
+     * Set logNoSemAcento
+     *
+     * @param string $logNoSemAcento
+     *
+     * @return LogLogradouro
+     */
+    public function setLogNoSemAcento($logNoSemAcento)
+    {
+        $this->logNoSemAcento = $logNoSemAcento;
+
+        return $this;
+    }
+
+    /**
+     * Get logNoSemAcento
+     *
+     * @return string
+     */
+    public function getLogNoSemAcento()
+    {
+        return $this->logNoSemAcento;
+    }
+
+    /**
+     * Set indUop
+     *
+     * @param string $indUop
+     *
+     * @return LogLogradouro
+     */
+    public function setIndUop($indUop)
+    {
+        $this->indUop = $indUop;
+
+        return $this;
+    }
+
+    /**
+     * Get indUop
+     *
+     * @return string
+     */
+    public function getIndUop()
+    {
+        return $this->indUop;
+    }
+
+    /**
+     * Set indGru
+     *
+     * @param string $indGru
+     *
+     * @return LogLogradouro
+     */
+    public function setIndGru($indGru)
+    {
+        $this->indGru = $indGru;
+
+        return $this;
+    }
+
+    /**
+     * Get indGru
+     *
+     * @return string
+     */
+    public function getIndGru()
+    {
+        return $this->indGru;
+    }
+
+    /**
+     * Set temp
+     *
+     * @param string $temp
+     *
+     * @return LogLogradouro
+     */
+    public function setTemp($temp)
+    {
+        $this->temp = $temp;
+
+        return $this;
+    }
+
+    /**
+     * Get temp
+     *
+     * @return string
+     */
+    public function getTemp()
+    {
+        return $this->temp;
+    }
+
+    /**
+     * Set baiNuSequencialIni
+     *
+     * @param \ZipServerBundle\Entity\LogBairro $baiNuSequencialIni
+     *
+     * @return LogLogradouro
+     */
+    public function setBaiNuSequencialIni(\ZipServerBundle\Entity\LogBairro $baiNuSequencialIni = null)
+    {
+        $this->baiNuSequencialIni = $baiNuSequencialIni;
+
+        return $this;
+    }
+
+    /**
+     * Get baiNuSequencialIni
+     *
+     * @return \ZipServerBundle\Entity\LogBairro
+     */
+    public function getBaiNuSequencialIni()
+    {
+        return $this->baiNuSequencialIni;
+    }
+
+    /**
+     * Set locNuSequencial
+     *
+     * @param \ZipServerBundle\Entity\LogLocalidade $locNuSequencial
+     *
+     * @return LogLogradouro
+     */
+    public function setLocNuSequencial(\ZipServerBundle\Entity\LogLocalidade $locNuSequencial = null)
+    {
+        $this->locNuSequencial = $locNuSequencial;
+
+        return $this;
+    }
+
+    /**
+     * Get locNuSequencial
+     *
+     * @return \ZipServerBundle\Entity\LogLocalidade
+     */
+    public function getLocNuSequencial()
+    {
+        return $this->locNuSequencial;
+    }
+}

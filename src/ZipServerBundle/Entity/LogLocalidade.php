@@ -81,5 +81,206 @@ class LogLocalidade
     private $ufeSg;
 
 
-}
 
+    /**
+     * Get locNuSequencial
+     *
+     * @return integer
+     */
+    public function getLocNuSequencial()
+    {
+        return $this->locNuSequencial;
+    }
+
+    /**
+     * Set locNosub
+     *
+     * @param string $locNosub
+     *
+     * @return LogLocalidade
+     */
+    public function setLocNosub($locNosub)
+    {
+        $this->locNosub = $locNosub;
+
+        return $this;
+    }
+
+    /**
+     * Get locNosub
+     *
+     * @return string
+     */
+    public function getLocNosub()
+    {
+        return $this->locNosub;
+    }
+
+    /**
+     * Set locNo
+     *
+     * @param string $locNo
+     *
+     * @return LogLocalidade
+     */
+    public function setLocNo($locNo)
+    {
+        $this->locNo = $locNo;
+
+        return $this;
+    }
+
+    /**
+     * Get locNo
+     *
+     * @return string
+     */
+    public function getLocNo()
+    {
+        return $this->locNo;
+    }
+
+    /**
+     * Set cep
+     *
+     * @param string $cep
+     *
+     * @return LogLocalidade
+     */
+    public function setCep($cep)
+    {
+        $this->cep = $cep;
+
+        return $this;
+    }
+
+    /**
+     * Get cep
+     *
+     * @return string
+     */
+    public function getCep()
+    {
+        return $this->cep;
+    }
+
+    /**
+     * Set locInSituacao
+     *
+     * @param integer $locInSituacao
+     *
+     * @return LogLocalidade
+     */
+    public function setLocInSituacao($locInSituacao)
+    {
+        $this->locInSituacao = $locInSituacao;
+
+        return $this;
+    }
+
+    /**
+     * Get locInSituacao
+     *
+     * @return integer
+     */
+    public function getLocInSituacao()
+    {
+        return $this->locInSituacao;
+    }
+
+    /**
+     * Set locInTipoLocalidade
+     *
+     * @param string $locInTipoLocalidade
+     *
+     * @return LogLocalidade
+     */
+    public function setLocInTipoLocalidade($locInTipoLocalidade)
+    {
+        $this->locInTipoLocalidade = $locInTipoLocalidade;
+
+        return $this;
+    }
+
+    /**
+     * Get locInTipoLocalidade
+     *
+     * @return string
+     */
+    public function getLocInTipoLocalidade()
+    {
+        return $this->locInTipoLocalidade;
+    }
+
+    /**
+     * Set locNuSequencialSub
+     *
+     * @param integer $locNuSequencialSub
+     *
+     * @return LogLocalidade
+     */
+    public function setLocNuSequencialSub($locNuSequencialSub)
+    {
+        $this->locNuSequencialSub = $locNuSequencialSub;
+
+        return $this;
+    }
+
+    /**
+     * Get locNuSequencialSub
+     *
+     * @return integer
+     */
+    public function getLocNuSequencialSub()
+    {
+        return $this->locNuSequencialSub;
+    }
+
+    /**
+     * Set temp
+     *
+     * @param string $temp
+     *
+     * @return LogLocalidade
+     */
+    public function setTemp($temp)
+    {
+        $this->temp = $temp;
+
+        return $this;
+    }
+
+    /**
+     * Get temp
+     *
+     * @return string
+     */
+    public function getTemp()
+    {
+        return $this->temp;
+    }
+
+    /**
+     * Set ufeSg
+     *
+     * @param \ZipServerBundle\Entity\LogFaixaUf $ufeSg
+     *
+     * @return LogLocalidade
+     */
+    public function setUfeSg(\ZipServerBundle\Entity\LogFaixaUf $ufeSg = null)
+    {
+        $this->ufeSg = $ufeSg;
+
+        return $this;
+    }
+
+    /**
+     * Get ufeSg
+     *
+     * @return \ZipServerBundle\Entity\LogFaixaUf
+     */
+    public function getUfeSg()
+    {
+        return $this->ufeSg;
+    }
+}

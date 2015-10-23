@@ -81,5 +81,206 @@ class LogCpc
     private $locNuSequencial;
 
 
-}
 
+    /**
+     * Get cpcNuSequencial
+     *
+     * @return integer
+     */
+    public function getCpcNuSequencial()
+    {
+        return $this->cpcNuSequencial;
+    }
+
+    /**
+     * Set ufeSg
+     *
+     * @param string $ufeSg
+     *
+     * @return LogCpc
+     */
+    public function setUfeSg($ufeSg)
+    {
+        $this->ufeSg = $ufeSg;
+
+        return $this;
+    }
+
+    /**
+     * Get ufeSg
+     *
+     * @return string
+     */
+    public function getUfeSg()
+    {
+        return $this->ufeSg;
+    }
+
+    /**
+     * Set cep
+     *
+     * @param string $cep
+     *
+     * @return LogCpc
+     */
+    public function setCep($cep)
+    {
+        $this->cep = $cep;
+
+        return $this;
+    }
+
+    /**
+     * Get cep
+     *
+     * @return string
+     */
+    public function getCep()
+    {
+        return $this->cep;
+    }
+
+    /**
+     * Set cpcNo
+     *
+     * @param string $cpcNo
+     *
+     * @return LogCpc
+     */
+    public function setCpcNo($cpcNo)
+    {
+        $this->cpcNo = $cpcNo;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcNo
+     *
+     * @return string
+     */
+    public function getCpcNo()
+    {
+        return $this->cpcNo;
+    }
+
+    /**
+     * Set cpcEndereco
+     *
+     * @param string $cpcEndereco
+     *
+     * @return LogCpc
+     */
+    public function setCpcEndereco($cpcEndereco)
+    {
+        $this->cpcEndereco = $cpcEndereco;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcEndereco
+     *
+     * @return string
+     */
+    public function getCpcEndereco()
+    {
+        return $this->cpcEndereco;
+    }
+
+    /**
+     * Set cpcTipo
+     *
+     * @param string $cpcTipo
+     *
+     * @return LogCpc
+     */
+    public function setCpcTipo($cpcTipo)
+    {
+        $this->cpcTipo = $cpcTipo;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcTipo
+     *
+     * @return string
+     */
+    public function getCpcTipo()
+    {
+        return $this->cpcTipo;
+    }
+
+    /**
+     * Set cpcAbrangencia
+     *
+     * @param string $cpcAbrangencia
+     *
+     * @return LogCpc
+     */
+    public function setCpcAbrangencia($cpcAbrangencia)
+    {
+        $this->cpcAbrangencia = $cpcAbrangencia;
+
+        return $this;
+    }
+
+    /**
+     * Get cpcAbrangencia
+     *
+     * @return string
+     */
+    public function getCpcAbrangencia()
+    {
+        return $this->cpcAbrangencia;
+    }
+
+    /**
+     * Set temp
+     *
+     * @param string $temp
+     *
+     * @return LogCpc
+     */
+    public function setTemp($temp)
+    {
+        $this->temp = $temp;
+
+        return $this;
+    }
+
+    /**
+     * Get temp
+     *
+     * @return string
+     */
+    public function getTemp()
+    {
+        return $this->temp;
+    }
+
+    /**
+     * Set locNuSequencial
+     *
+     * @param \ZipServerBundle\Entity\LogLocalidade $locNuSequencial
+     *
+     * @return LogCpc
+     */
+    public function setLocNuSequencial(\ZipServerBundle\Entity\LogLocalidade $locNuSequencial = null)
+    {
+        $this->locNuSequencial = $locNuSequencial;
+
+        return $this;
+    }
+
+    /**
+     * Get locNuSequencial
+     *
+     * @return \ZipServerBundle\Entity\LogLocalidade
+     */
+    public function getLocNuSequencial()
+    {
+        return $this->locNuSequencial;
+    }
+}

@@ -46,5 +46,100 @@ class LogFaixaUop
     private $uopNuSequencial;
 
 
-}
 
+    /**
+     * Set fncNuInicial
+     *
+     * @param integer $fncNuInicial
+     *
+     * @return LogFaixaUop
+     */
+    public function setFncNuInicial($fncNuInicial)
+    {
+        $this->fncNuInicial = $fncNuInicial;
+
+        return $this;
+    }
+
+    /**
+     * Get fncNuInicial
+     *
+     * @return integer
+     */
+    public function getFncNuInicial()
+    {
+        return $this->fncNuInicial;
+    }
+
+    /**
+     * Set fncNuFinal
+     *
+     * @param integer $fncNuFinal
+     *
+     * @return LogFaixaUop
+     */
+    public function setFncNuFinal($fncNuFinal)
+    {
+        $this->fncNuFinal = $fncNuFinal;
+
+        return $this;
+    }
+
+    /**
+     * Get fncNuFinal
+     *
+     * @return integer
+     */
+    public function getFncNuFinal()
+    {
+        return $this->fncNuFinal;
+    }
+
+    /**
+     * Set fncInTipo
+     *
+     * @param string $fncInTipo
+     *
+     * @return LogFaixaUop
+     */
+    public function setFncInTipo($fncInTipo)
+    {
+        $this->fncInTipo = $fncInTipo;
+
+        return $this;
+    }
+
+    /**
+     * Get fncInTipo
+     *
+     * @return string
+     */
+    public function getFncInTipo()
+    {
+        return $this->fncInTipo;
+    }
+
+    /**
+     * Set uopNuSequencial
+     *
+     * @param \ZipServerBundle\Entity\LogUnidOper $uopNuSequencial
+     *
+     * @return LogFaixaUop
+     */
+    public function setUopNuSequencial(\ZipServerBundle\Entity\LogUnidOper $uopNuSequencial = null)
+    {
+        $this->uopNuSequencial = $uopNuSequencial;
+
+        return $this;
+    }
+
+    /**
+     * Get uopNuSequencial
+     *
+     * @return \ZipServerBundle\Entity\LogUnidOper
+     */
+    public function getUopNuSequencial()
+    {
+        return $this->uopNuSequencial;
+    }
+}
