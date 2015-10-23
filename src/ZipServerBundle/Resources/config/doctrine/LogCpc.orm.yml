@@ -1,0 +1,89 @@
+ZipServerBundle\Entity\LogCpc:
+    type: entity
+    table: log_cpc
+    indexes:
+        log_cpc_cep:
+            columns:
+                - cep
+        log_cpc_ufe_sgloc_nu_sequencialcpc_no:
+            columns:
+                - ufe_sg
+                - loc_nu_sequencial
+                - cpc_no
+        log_cpc_loc_nu_sequencial:
+            columns:
+                - loc_nu_sequencial
+        log_cpc_temp:
+            columns:
+                - temp
+    id:
+        cpcNuSequencial:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            id: true
+            column: cpc_nu_sequencial
+            generator:
+                strategy: IDENTITY
+    fields:
+        ufeSg:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: false
+            column: ufe_sg
+        cep:
+            type: string
+            nullable: false
+            length: 16
+            options:
+                fixed: false
+        cpcNo:
+            type: string
+            nullable: false
+            length: 96
+            options:
+                fixed: false
+            column: cpc_no
+        cpcEndereco:
+            type: string
+            nullable: false
+            length: 108
+            options:
+                fixed: false
+            column: cpc_endereco
+        cpcTipo:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+            column: cpc_tipo
+        cpcAbrangencia:
+            type: string
+            nullable: true
+            length: 80
+            options:
+                fixed: false
+            column: cpc_abrangencia
+        temp:
+            type: string
+            nullable: true
+            length: 8
+            options:
+                fixed: true
+    manyToOne:
+        locNuSequencial:
+            targetEntity: LogLocalidade
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                loc_nu_sequencial:
+                    referencedColumnName: loc_nu_sequencial
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

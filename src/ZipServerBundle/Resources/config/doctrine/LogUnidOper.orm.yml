@@ -1,0 +1,108 @@
+ZipServerBundle\Entity\LogUnidOper:
+    type: entity
+    table: log_unid_oper
+    indexes:
+        log_unid_oper_cep:
+            columns:
+                - cep
+        log_unid_oper_ufe_sgloc_nu_sequencialuop_no:
+            columns:
+                - ufe_sg
+                - loc_nu_sequencial
+                - uop_no
+        log_unid_oper_loc_nu_sequencial:
+            columns:
+                - loc_nu_sequencial
+        log_unid_oper_bai_nu_sequencial:
+            columns:
+                - bai_nu_sequencial
+        log_unid_oper_log_nu_sequencial:
+            columns:
+                - log_nu_sequencial
+        log_unid_oper_temp:
+            columns:
+                - temp
+    id:
+        uopNuSequencial:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            id: true
+            column: uop_nu_sequencial
+            generator:
+                strategy: IDENTITY
+    fields:
+        ufeSg:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: false
+            column: ufe_sg
+        uopNo:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: uop_no
+        cep:
+            type: string
+            nullable: false
+            length: 16
+            options:
+                fixed: false
+        uopEndereco:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+            column: uop_endereco
+        uopInCp:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: false
+            column: uop_in_cp
+        temp:
+            type: string
+            nullable: true
+            length: 8
+            options:
+                fixed: true
+    manyToOne:
+        locNuSequencial:
+            targetEntity: LogLocalidade
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                loc_nu_sequencial:
+                    referencedColumnName: loc_nu_sequencial
+            orphanRemoval: false
+        logNuSequencial:
+            targetEntity: LogLogradouro
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                log_nu_sequencial:
+                    referencedColumnName: log_nu_sequencial
+            orphanRemoval: false
+        baiNuSequencial:
+            targetEntity: LogBairro
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                bai_nu_sequencial:
+                    referencedColumnName: bai_nu_sequencial
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,57 @@
+ZipServerBundle\Entity\LogBairro:
+    type: entity
+    table: log_bairro
+    indexes:
+        log_bairro_ufe_sgloc_nu_sequencialbai_no:
+            columns:
+                - ufe_sg
+                - loc_nu_sequencial
+                - bai_no
+        log_bairro_loc_nu_sequencial:
+            columns:
+                - loc_nu_sequencial
+    id:
+        baiNuSequencial:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            id: true
+            column: bai_nu_sequencial
+            generator:
+                strategy: IDENTITY
+    fields:
+        ufeSg:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: false
+            column: ufe_sg
+        baiNo:
+            type: string
+            nullable: false
+            length: 72
+            options:
+                fixed: false
+            column: bai_no
+        baiNoAbrev:
+            type: string
+            nullable: true
+            length: 36
+            options:
+                fixed: false
+            column: bai_no_abrev
+    manyToOne:
+        locNuSequencial:
+            targetEntity: LogLocalidade
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                loc_nu_sequencial:
+                    referencedColumnName: loc_nu_sequencial
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

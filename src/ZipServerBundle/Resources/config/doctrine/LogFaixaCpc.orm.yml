@@ -1,0 +1,36 @@
+ZipServerBundle\Entity\LogFaixaCpc:
+    type: entity
+    table: log_faixa_cpc
+    indexes:
+        log_faixa_cpc_cpc_nu_sequencial:
+            columns:
+                - cpc_nu_sequencial
+    id:
+        cpcNuInicial:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            id: true
+            column: cpc_nu_inicial
+    fields:
+        cpcNuFinal:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            column: cpc_nu_final
+    oneToOne:
+        cpcNuSequencial:
+            targetEntity: LogCpc
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                cpc_nu_sequencial:
+                    referencedColumnName: cpc_nu_sequencial
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

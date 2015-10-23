@@ -1,0 +1,42 @@
+ZipServerBundle\Entity\LogFaixaUop:
+    type: entity
+    table: log_faixa_uop
+    indexes:
+        log_faixa_uop_uop_nu_sequencial:
+            columns:
+                - uop_nu_sequencial
+    id:
+        fncNuInicial:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            id: true
+            column: fnc_nu_inicial
+    fields:
+        fncNuFinal:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: fnc_nu_final
+        fncInTipo:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: fnc_in_tipo
+    oneToOne:
+        uopNuSequencial:
+            targetEntity: LogUnidOper
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                uop_nu_sequencial:
+                    referencedColumnName: uop_nu_sequencial
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
